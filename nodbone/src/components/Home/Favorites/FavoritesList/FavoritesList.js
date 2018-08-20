@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./FavoritesList.css";
+import FavOne from "./FavOne/FavOne";
 
 class FavoritesList extends Component {
   constructor(props) {
@@ -10,34 +11,20 @@ class FavoritesList extends Component {
   }
 
   changeHandler = (change, i) => {
-    console.log(change, i);
     this.props.changeFavorite(change, i);
   };
+
   render() {
-    let { change } = this.state;
     return this.props.favorites.map((val, i) => (
-      <div className="card">
-        <h1 key={i}>{val}</h1>
-        <button
-          className="buttn delete"
-          onClick={() => this.props.deleteFavorite(i)}
-        >
-          Delete
-        </button>
-        <input
-          className="edit"
-          onChange={e => this.setState({ change: e.target.value })}
-          value={change}
+      <div className="eh">
+        <FavOne
+          deleteFavorite={this.props.deleteFavorite}
+          changeHandler={this.changeHandler}
+          setChange={this.setChange}
+          key={i}
+          val={val}
+          i={i}
         />
-        <button
-          className="buttn submit"
-          onClick={() => {
-            this.changeHandler(change, i);
-            this.setState({ change: "" });
-          }}
-        >
-          Submit Change
-        </button>
       </div>
     ));
   }

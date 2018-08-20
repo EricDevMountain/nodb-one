@@ -1,0 +1,32 @@
+/* .card {
+  margin: auto;
+  margin-top: 10px;
+  width: 60%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+} */
+
+.buttn {
+  height: 25px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: darkblue;
+  color: whitesmoke;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.edit {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.buttn:hover {
+  background-color: steelblue;
+}
