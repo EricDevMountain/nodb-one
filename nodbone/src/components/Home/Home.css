@@ -1,0 +1,27 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: slategray;
+  color: white;
+  height: 100%;
+}
+
+.favbutton {
+  margin-top: 20px;
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: darkblue;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.favbutton:hover {
+  background-color: steelblue;
+}
+
+.ron {
+  width: 80%;
+}

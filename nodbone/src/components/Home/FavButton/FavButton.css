@@ -1,0 +1,14 @@
+.favebutton {
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: darkblue;
+  color: whitesmoke;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.favebutton:hover {
+  background-color: steelblue;
+}

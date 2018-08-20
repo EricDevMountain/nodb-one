@@ -1,0 +1,19 @@
+.randomquote {
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  width: 50%;
+  margin: 0 auto;
+}
+
+.newquote {
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: darkblue;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.newquote:hover {
+  background-color: steelblue;
+}
