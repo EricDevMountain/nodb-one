@@ -3,13 +3,6 @@ import "./FavoritesList.css";
 import FavOne from "./FavOne/FavOne";
 
 class FavoritesList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      change: ""
-    };
-  }
-
   changeHandler = (change, i) => {
     this.props.changeFavorite(change, i);
   };
