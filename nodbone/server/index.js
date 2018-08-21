@@ -22,7 +22,7 @@ app.post("/api/favoritequotes", addQuoteToFavorites);
 
 app.get("/api/favoritequotes", getFavorites);
 app.delete("/api/favoritequote/:id", deleteFavorite);
-app.put("/api/favoritequote/:id", changeFavorite);
+app.put("/api/favoritequote/:ind", changeFavorite);
 
 app.listen(port, () => {
   console.log(`Whistle Tip on port:${port}`);

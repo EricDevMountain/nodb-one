@@ -32,7 +32,7 @@ const deleteFavorite = (req, res, next) => {
 };
 
 const changeFavorite = (req, res, next) => {
-  const ind = parseInt(req.params.id);
+  const ind = parseInt(req.params.ind);
   favoritesList[ind] = req.body.val;
   res.status(200).json(favoritesList);
 };

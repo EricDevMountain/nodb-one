@@ -24,9 +24,9 @@ class Favorites extends Component {
       .delete(`/api/favoritequote/${i}`)
       .then(response => this.setState({ favorites: response.data }));
   };
-  changeFavorite = (val, i) => {
+  changeFavorite = (val, ind) => {
     axios
-      .put(`/api/favoritequote/${i}`, { val })
+      .put(`/api/favoritequote/${ind}`, { val })
       .then(response => this.setState({ favorites: response.data }));
   };
   newFavorite = quote => {
